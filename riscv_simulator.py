@@ -346,11 +346,11 @@ class RISCVSimulator:
                     print(f"End of memory reached. Terminating after {instruction_count} instructions and {cycle_count} cycles.")
                     break
 
-                if cycle_count % 1000 == 0:
-                    user_input = input(f"Executed {cycle_count} cycles. Press Enter to continue or 'q' to quit: ")
-                    if user_input.lower() == 'q':
-                        print("Simulation aborted by user.")
-                        break
+                # if cycle_count % 1000 == 0:
+                #     user_input = input(f"Executed {cycle_count} cycles. Press Enter to continue or 'q' to quit: ")
+                #     if user_input.lower() == 'q':
+                #         print("Simulation aborted by user.")
+                #         break
 
             if cycle_count >= max_cycles:
                 print(f"Maximum cycle limit ({max_cycles}) reached. Possible infinite loop.")
